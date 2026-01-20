@@ -84,4 +84,12 @@ document.addEventListener('DOMContentLoaded', () => {
             micStatus.textContent = 'Cake cut! Happy Birthday, Sanuu! 🎂';
         }, 1500);
     }
+
+    // New: Dropdown wish selector
+    document.getElementById('wish-select').addEventListener('change', function() {
+        const selectedWish = this.value;
+        if (selectedWish) {
+            document.getElementById('message').value = selectedWish;
+        }
+    });
 });
