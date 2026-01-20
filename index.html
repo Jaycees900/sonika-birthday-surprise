@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wish for Sanuu 🎂</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <audio id="bg-music" loop>
+        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav"> <!-- Free birthday bell sound; replace with your MP3 if needed -->
+    </audio>
+    <div class="container">
+        <h1>🎉 Happy Birthday, Sanuu! 🎉</h1>
+        <img id="sonika-pic" src="sonika.jpg" alt="Sonika" style="width: 150px; height: 150px; border-radius: 50%; margin: 20px auto; display: block;">
+        <form id="wish-form">
+            <input type="text" id="name" value="Sonika" placeholder="Enter name (default: Sonika)" required>
+            <textarea id="message" placeholder="Write a special message for Sanuu..." required></textarea>
+            <button type="submit">Generate Wish</button>
+        </form>
+        <div id="wish-display" class="hidden">
+            <h2>Happy Birthday, <span id="display-name"></span>!</h2>
+            <p id="display-message"></p>
+            <button id="next-btn">Let's Celebrate with Cake!</button>
+        </div>
+        <div id="cake-section" class="hidden">
+            <div id="cake">
+                <div class="candle" id="candle1"></div>
+                <div class="candle" id="candle2"></div>
+                <div class="candle" id="candle3"></div>
+                <div class="candle" id="candle4"></div>
+                <div class="candle" id="candle5"></div>
+                <div id="cake-body"></div>
+                <div id="knife" class="hidden"></div>
+            </div>
+            <button id="blow-btn">Tap to Blow Candles</button>
+            <p id="mic-status">Mic access needed to blow!</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
